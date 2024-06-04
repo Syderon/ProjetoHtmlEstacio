@@ -1,0 +1,152 @@
+body{
+    background-color: rgb(23, 23, 23);;
+}
+
+.carousel-item{
+    height: 100vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    background-size: cover;
+    padding: 0rem;
+}
+
+.carousel-caption{
+    bottom: 220px;
+}
+
+
+.carousel-caption h5{
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-top: 20px;
+    font-family: merienda;
+}
+.carousel-caption p{
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+    font-family: poppins;
+}
+.carousel-caption a{
+    text-transform: uppercase;
+    background: #103b99;
+    padding: 10px 30px;
+    display: inline-block;
+    color: #fff;
+    margin-top: 1px;
+    border-radius: 50px;
+    
+}
+.navbar-nav a{
+    font-family: poppins;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.navbar-light .navbar-brand{
+    color: #295cd2;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    background-color: transparent !important;
+    
+    
+}
+span{
+    color: rgb(82, 82, 82);
+}
+
+
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .navbar-link.active, .navbar-light .navbar-nav .navbar-link.show, .navbar-light .navbar-nav .show > .nav-link{
+    color: #fff;
+}
+.navbar-light .navbar-nav .nav-link{
+    color: #fff;
+}
+.navbar-nav{
+    text-align: center;
+}
+.nav-link{
+    padding: .2rem 1rem;
+}
+.nav-link.active, .nav-link:focus{
+    color: #fff !important;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover{
+    color: rgb(255, 255, 255) !important;
+    background: #1a3ca4;
+    border-radius: 50px;
+}
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
+    color: rgba(210, 163, 54, 0.9);
+}
+
+
+#carouselExample{
+    padding: 1rem;
+    margin: .5rem;
+    margin-top: 0;
+    margin-bottom: 0px;
+}
+
+.meu-carousel {
+    text-align: center;
+    
+  }
+
+  /* Ajuste a largura dos cards */
+  .card {
+    height: 360px;
+    width: 200px; /* Defina a largura desejada */
+    margin: 0 auto; /* Centraliza os cards */
+    background-color: transparent !important;
+    background: transparent !important;
+    border-radius: .1px;
+    border-color: #295cd2;
+   
+  }
+
+
+.card p,
+.card h5{
+    color: white;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: auto;
+  height: auto;
+  font-size: 3rem; /* Tamanho do ícone */
+}
+
+.carousel-control-prev {
+  left: 10px; /* Distância do lado esquerdo */
+}
+
+.carousel-control-next {
+  right: 10px; /* Distância do lado direito */
+}
+
+
+.navbarSupportedContent.rolagem{
+    background-color: white;
+}
+
+.carousel-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+#teste.rolagem{
+    background-color: rgba(17, 17, 17, 0.955);
+    
+    padding: 0rem;
+}
