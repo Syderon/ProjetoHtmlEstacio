@@ -5,7 +5,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $episodes = $_POST['episodes'];
     $rating = $_POST['rating'];
     $video_link = $_POST['video_link'];
-//teste
+    $image_url = $_POST['image_url'];
     try {
         $dbPath = realpath('banco_anime.db');
         if ($dbPath === false) {
@@ -14,8 +14,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $db = new PDO('sqlite:' . $dbPath);
         $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-        $stmt = $db->prepare("INSERT INTO anime (title, genre, episodes, rating, video_link) VALUES (?, ?, ?, ?, ?)");
-        $stmt->execute([$title, $genre, $episodes, $rating, $video_link]);
+        $stmt = $db->prepare("INSERT INTO anime (title, genre, episodes, rating, video_link, image_url) VALUES (?, ?, ?, ?, ?,?)");
+        $stmt->execute([$title, $genre, $episodes, $rating, $video_link, $image_url]);
 
         echo "Anime added successfully. <a href='index.php'>Go back to the list</a>";
     } catch (PDOException $e) {
@@ -50,6 +50,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         <label for="video_link">Video Link:</label>
         <input type="url" id="video_link" name="video_link" required><br>
+
+        <label for="teste">Image Link:</label>
+        <input type="url" id="image_url" name="image_url" required><br>
 
         <input type="submit" value="Add Anime">
     </form>

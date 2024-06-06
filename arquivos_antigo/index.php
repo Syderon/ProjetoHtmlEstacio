@@ -44,6 +44,7 @@ try {
                 Genre: <?php echo htmlspecialchars($anime['genre']); ?><br>
                 Episodes: <?php echo htmlspecialchars($anime['episodes']); ?><br>
                 Rating: <?php echo htmlspecialchars($anime['rating']); ?><br>
+                <img src=<?php echo htmlspecialchars($anime['image_url']); ?> />
                 <?php if (!empty($anime['video_link'])): ?>
                     <a href="<?php echo htmlspecialchars($anime['video_link']); ?>" target="_blank">Watch Video</a>
                 <?php endif; ?>
