@@ -56,7 +56,7 @@ try {
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
@@ -67,7 +67,7 @@ try {
               <a class="dropdown-item" href="epsodiosnovos.html">Epsódios Novos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="filmes.html">Filmes</a>
+            <a class="nav-link" href="filmes.php">Animes DB</a>
           </li>
         </ul>
         <form class="form-inline my-2 my-lg-0 ml-auto btn-sm">
@@ -81,7 +81,7 @@ try {
 
   <div class="container sec-anime">
     <section class="anime" id="anime">
-      <h1 class="heading">Animes Populares</h1>
+      <h1 class="heading" style="margin-top: 50px;"></h1>
       <ul class="anime-list">
         <?php foreach ($anime_list as $anime): ?>
           <li class="anime-item">
