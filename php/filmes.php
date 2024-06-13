@@ -1,6 +1,6 @@
 <?php
 try {
-    $dbPath = realpath('banco_anime.db');
+    $dbPath = realpath('../banco_anime.db');
     if ($dbPath === false) {
         throw new Exception('Database file not found.');
     }
@@ -34,7 +34,7 @@ try {
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
     integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
@@ -56,15 +56,15 @@ try {
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
               Animes
             </a>
             <div class="dropdown-menu">
-              <a class="dropdown-item" href="animesnovos.html">Animes Novos</a>
-              <a class="dropdown-item" href="epsodiosnovos.html">Epsódios Novos</a>
+              <a class="dropdown-item" href="../animesnovos.html">Animes Novos</a>
+              <a class="dropdown-item" href="../epsodiosnovos.html">Epsódios Novos</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="filmes.php">Animes DB</a>

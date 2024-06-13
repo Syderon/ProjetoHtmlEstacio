@@ -1,7 +1,7 @@
 <?php
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     try {
-        $dbPath = realpath('banco_anime.db');
+        $dbPath = realpath('../banco_anime.db');
         if ($dbPath === false) {
             throw new Exception('Database file not found.');
         }

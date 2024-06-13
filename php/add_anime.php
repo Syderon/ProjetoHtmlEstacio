@@ -7,7 +7,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $video_link = $_POST['video_link'];
     $image_url = $_POST['image_url'];
     try {
-        $dbPath = realpath('banco_anime.db');
+        $dbPath = realpath('../banco_anime.db');
         if ($dbPath === false) {
             throw new Exception('Database file not found.');
         }
