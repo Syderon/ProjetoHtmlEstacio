@@ -17,7 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $stmt = $db->prepare("INSERT INTO anime (title, genre, episodes, rating, video_link, image_url) VALUES (?, ?, ?, ?, ?,?)");
         $stmt->execute([$title, $genre, $episodes, $rating, $video_link, $image_url]);
 
-        echo "Anime added successfully. <a href='index.php'>Go back to the list</a>";
+        echo "Anime added successfully. <a href='index.html'>Go back to the list</a>";
     } catch (PDOException $e) {
         echo "PDO Error: " . $e->getMessage();
     } catch (Exception $e) {

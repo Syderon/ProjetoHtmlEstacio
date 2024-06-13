@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $stmt = $db->prepare("DELETE FROM anime WHERE id = ?");
         $stmt->execute([$anime_id]);
 
-        echo "Anime deleted successfully. <a href='index.php'>Go back to the list</a>";
+        echo "Anime deleted successfully. <a href='index.html'>Go back to the list</a>";
     } catch (PDOException $e) {
         echo "PDO Error: " . $e->getMessage();
     } catch (Exception $e) {
